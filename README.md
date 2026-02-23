@@ -35,7 +35,7 @@ Below are steps to configure a secret vault and assign it to the plugin.
 
 ## Setting Up the Secret Vault
 
-In order to use the Join Notification plugin, you need to create a secret vaul that contains the device ID and API key for your device.
+In order to use the Join Notification plugin, you need to create a secret vault that contains the device ID and API key for your device.
 
 #### Create Secret Vault
 
