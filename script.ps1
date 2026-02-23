@@ -51,7 +51,9 @@ if (-not [string]::IsNullOrEmpty($xyOps.params.joinnotificationtext)) {
     $joinNotificationText = $xyOps.params.joinnotificationtext
 }
 else {
-    $joinNotificationText = $xyOps.text
+    $joinNotificationText = $xyOps.text -replace '(http[s]?|[s]?ftp[s]?)(:\/\/)([^\s,]+)',''
+    $joinNotificationText += "`n"
+    $joinNotificationText += $xyOps.job.output
 }
 
 if (-not [string]::IsNullOrEmpty($xyOps.params.joinnotificationtitle)) {
